@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import * as firebase from 'firebase';
 
 export class Notes extends Component {
-    constructor (props) {
-        super(props);
-    }
+    // constructor (props) {
+    //     super(props);
+    // }
     removeNote (id){
         firebase.database().ref('notes').child(id).remove();
     }
@@ -26,8 +26,6 @@ export class Notes extends Component {
                         </div>
                     ))}
                 </div>
-          
-          
             </section>
         )
     }
